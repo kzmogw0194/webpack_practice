@@ -1,5 +1,5 @@
 import my from "./modules/my.js";
 
-console.log("webpack");
+console.log("web");
 
 my();
