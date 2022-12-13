@@ -7,7 +7,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "./dist"),
-        filename: "main.js",
+        filename: "javascripts/main.js",
     },
     module: {
         rules: [
@@ -25,7 +25,9 @@ module.exports = {
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "./stylesheets/my.css",
+        }),
         new HtmlWebpackPlugin( {
             template: "./src/index.html",
         }),
