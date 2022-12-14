@@ -51,6 +51,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin( {
             template: "./src/templates/index.pug",
+            filename: 'index.html',
+        }),
+        new HtmlWebpackPlugin( {
+            template: "./src/templates/service.pug",
+            filename: 'service.html',
         }),
         new CleanWebpackPlugin(),
     ],
