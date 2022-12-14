@@ -22,6 +22,17 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: "url-loader",
+                        options: {
+                            esModule: false,
+                        },
+                    },
+                ],
+            },
         ],
     },
     plugins: [
@@ -32,5 +43,5 @@ module.exports = {
             template: "./src/templates/index.html",
         }),
         new CleanWebpackPlugin(),
-    ]
+    ],
 }
