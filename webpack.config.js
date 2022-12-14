@@ -57,6 +57,10 @@ module.exports = {
             template: "./src/templates/service.pug",
             filename: 'service.html',
         }),
+        new HtmlWebpackPlugin({
+            template: './src/templates/members/taro.pug',
+            filename: 'members/taro.html',
+        }),
         new CleanWebpackPlugin(),
     ],
 }
