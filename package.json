@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "build:dev": "webpack"
   },
   "author": "ogawa kazuma",
   "license": "UNLICENSED",
