@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
+    devtool: 'source-map',
     entry: "./src/javascripts/main.js",
     output: {
         path: path.resolve(__dirname, "./dist"),
@@ -33,6 +34,9 @@ module.exports = {
                     },
                     {
                         loader: "css-loader",
+                        options: {
+                            sourceMap: false,
+                        },
                     },
                     {
                         loader: 'sass-loader',
