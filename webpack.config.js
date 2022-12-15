@@ -22,6 +22,7 @@ module.exports = {
                         options: {
                             presets: [
                                 ['@babel/preset-env', { "targets": "> 5%, not dead" }],
+                                '@babel/preset-react',
                             ],
                         },
                     },
